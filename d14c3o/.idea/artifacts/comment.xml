@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="javafx-preloader" name="comment">
+    <output-path>$PROJECT_DIR$/out/artifacts/comment</output-path>
+    <root id="archive" name="comment.jar">
+      <element id="archive" name="comment.jar" />
+    </root>
+  </artifact>
+</component>

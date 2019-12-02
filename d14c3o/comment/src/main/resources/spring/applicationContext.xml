@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+	xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+	http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+	<!--总的配置文件-->
+
+    <!--加载所有的properties配置文件-->
+	<context:property-placeholder location="classpath:properties/*.properties"/>
+
+    <!--导入所有的applicationContext开头的XML文件-->
+	<import resource="applicationContext-*.xml"/>
+
+    <!--与Spring相关的配置文件必须要以"applicationContext-"开头，要符合约定优于配置的思想-->
+</beans>
